@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Compare Prices!</title>
+
+    <link rel="stylesheet" type="text/css" href="https://dohliam.github.io/dropin-minimal-css/vendor/milligram.min.css">
+    <link rel="stylesheet" type="text/css" href="compare-prices.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="compare-prices.js" type="text/javascript"></script>
+  </head>
+
+  <body>
+
+    <h2>Compare Prices</h2>
+
+    <table>
+      <tr>
+        <td><h3>Item 1</h3></td>
+        <td><h3>Item 2</h3></td>
+      </tr>
+      <tr>
+        <td colspan="2"><center><em>Price (<span id="currSym">$</span>)</em></center></td>
+      </tr>
+      <tr>
+        <td><input type="number" value="1" min="1" id="price" placeholder="cost" onclick="convPrices();" onkeydown="convPrices();"></td>
+        <td><input type="number" value="1" min="1" id="price2" placeholder="cost" onclick="convPrices();" onkeydown="convPrices();"></td>
+      </tr>
+      <tr>
+        <td colspan="2"><center><em>per</em></center></td>
+      </tr>
+      <tr>
+        <td><input type="number" value="100" id="unitamt" placeholder="weight" onclick="convPrices();" onkeydown="convPrices();"></td>
+        <td><input type="number" value="100" id="unitamt2" placeholder="weight" onclick="convPrices();" onkeydown="convPrices();"></td>
+      </tr>
+      <tr>
+        <td><select id="units" onclick="convPrices();" onkeydown="convPrices();">
+          <option value="100,g">g</option>
+          <option value="0.10,g">kg</option>
+          <option value="100,ml">ml</option>
+          <option value="0.10,ml">l</option>
+          <option value="0.22046244,g">lb</option>
+          <option value="3.5714286,g">oz</option>
+          <option value="3.5195157,ml">fl oz</option>
+        </select></td>
+        <td><select id="units2" onclick="convPrices();" onkeydown="convPrices();">
+          <option value="100,g">g</option>
+          <option value="0.10,g">kg</option>
+          <option value="100,ml">ml</option>
+          <option value="0.10,ml">l</option>
+          <option value="0.22046244,g">lb</option>
+          <option value="3.5714286,g">oz</option>
+          <option value="3.5195157,ml">fl oz</option>
+        </select></td>
+      </tr>
+      <tr>
+        <td><div>= <span id="ppu1">&nbsp;</span> per <span id="per1">&nbsp;</span></div></td>
+        <td><div>= <span id="ppu2">&nbsp;</span> per <span id="per2">&nbsp;</span></div></td>
+      </tr>
+      <tr>
+        <td colspan="2"><center><input id="priceBtn" type="button" value="convert" onclick="convPrices();"></center></td>
+      </tr>
+    </table>
+
+  </body>
+</html>
