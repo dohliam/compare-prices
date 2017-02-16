@@ -40,7 +40,8 @@ Other tools for working with numbers, units, and currencies that might also be o
 
 ## Credits
 
-[Milligram](https://github.com/milligram/milligram) CSS by @cjpatoilo, prototyped using [dropin-minimal-css](https://github.com/dohliam/dropin-minimal-css)
+* [Milligram](https://github.com/milligram/milligram) CSS by @cjpatoilo, prototyped using [dropin-minimal-css](https://github.com/dohliam/dropin-minimal-css)
+* [github-corners](https://github.com/tholman/github-corners) by @tholman
 
 ## License
 
